@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Classroom</title>
+    <title>GroupChat</title>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300' rel='stylesheet' type='text/css'>
     <script src="https://use.typekit.net/hoy3lrg.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -27,21 +27,21 @@
           <i class="fa fa-chevron-down expand-button" aria-hidden="true"></i>
           <div id="status-options">
             <ul>
-              <li id="status-online" class="active"><span class="status-circle"></span> <p>Online</p></li>
-              <li id="status-away"><span class="status-circle"></span> <p>Away</p></li>
-              <li id="status-busy"><span class="status-circle"></span> <p>Busy</p></li>
-              <li id="status-offline"><span class="status-circle"></span> <p>Offline</p></li>
+              <li id="status-online" class="active"><span class="status-circle"></span> <p>オンライン</p></li>
+              <li id="status-away"><span class="status-circle"></span> <p>退席中</p></li>
+              <li id="status-busy"><span class="status-circle"></span> <p>取り込み中</p></li>
+              <li id="status-offline"><span class="status-circle"></span> <p>オフライン</p></li>
             </ul>
           </div>
           <div id="expanded">
             <div class="row">
-              <a class="btn btn-outline-light col-lg-5" style="margin-left:20px;font-weight:bold;padding-left:25px;"  href="{% url 'home:search_user' %}">Search Users</a>
+              <a class="btn btn-outline-light col-lg-5" style="margin-left:20px;font-weight:bold;padding-left:25px;"  href="{% url 'home:search_user' %}">ユーザーを探す</a>
             </div>
             <div class="row">
-              <a class="btn btn-outline-light col-lg-4" style="margin-left:20px; font-weight:bold;" href="{% url 'home:home'%}">Home</a>
+              <a class="btn btn-outline-light col-lg-4" style="margin-left:20px; font-weight:bold;" href="{% url 'home:home'%}">ホーム</a>
             </div>
             <div class="row">
-              <a class="btn btn-outline-danger col-lg-4" style="font-weight:bold;margin-left:20px;" href="{% url 'logout' %}">Logout</a>
+              <a class="btn btn-outline-danger col-lg-4" style="font-weight:bold;margin-left:20px;" href="{% url 'logout' %}">ログアウト</a>
             </div>
           </div>
         </div>
@@ -53,8 +53,8 @@
               <span class="contact-status online"></span>
               <img src="http://emilcarlsson.se/assets/louislitt.png" alt="" />
               <div class="meta">
-                <p class="name">Louis Litt</p>
-                <p class="preview">You just got LITT up, Mike.</p>
+                <p class="name">照明を当てる？</p>
+                <p class="preview">照明があたったよ...</p>
               </div>
             </div>
           </li>
@@ -64,7 +64,7 @@
               <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
               <div class="meta">
                 <p class="name">Harvey Specter</p>
-                <p class="preview">Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do any one of a hundred and forty six other things.</p>
+                <p class="preview">ちがう！！それはハッタリだ！.</p>
               </div>
             </div>
           </li> {% endcomment %}
