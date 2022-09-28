@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GroupChat</title>
+    <title>Classroom<title>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300' rel='stylesheet' type='text/css'>
     <script src="https://use.typekit.net/hoy3lrg.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -83,7 +83,7 @@
         <img src="{{ group.group_profile.image.url }}" alt="" />
         <a href="{% url 'home:group_profile' group %}"><p>{{ group.group_name }}</p></a>
         <div id = "older_msg_div">
-          <button id="check_older_messages">see older messages</button>
+          <button id="check_older_messages">もっと昔のメッセージを見るの？</button>
         </div>
         
       </div>
@@ -91,11 +91,11 @@
         <ul id="chat-log">
           {% comment %} <li class="sent">
             <img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
-            <p>How the hell am I supposed to get a jury to believe you when I am not even sure that I do?!</p>
+            <p>陪審員にどうやって信じてもらえと言うんだ！？</p>
           </li>
           <li class="replies">
             <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-            <p>When you're backed against the wall, break the god damn thing down.</p>
+            <p>壁際に追い込まれたら、神棚を壊せ。</p>
           </li> {% endcomment %}
         </ul>
       </div>
