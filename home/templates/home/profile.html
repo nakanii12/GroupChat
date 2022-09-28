@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>GroupChat</title>
+  <title>Classroom</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -17,22 +17,22 @@
 
  <nav class="navbar navbar-expand-sm navbar-light" style="background-color:#e9ecef;">
   <!-- Brand/logo -->
-  <a class="navbar-brand" href="#">Profile Info</a>
+  <a class="navbar-brand" href="#">プロフィール情報</a>
   
   <!-- Links -->
   <ul class="navbar-nav">
     <li class="nav-item rounded">
-      <a class="nav-link" href="{% url 'home:home' %}">Home</a>
+      <a class="nav-link" href="{% url 'home:home' %}">ホーム</a>
     </li>
     {% if required_user == user %}
         <li class="nav-item rounded">
-            <a data-toggle="collapse" id="update-prof" class="nav-link" href="#update-form">Update Profile</a>
+            <a data-toggle="collapse" id="update-prof" class="nav-link" href="#update-form">プロフ更新</a>
         </li>
     {% endif %}
     </ul>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item rounded">
-        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+        <a class="nav-link" href="{% url 'logout' %}">ログアウト</a>
       </li>
     </ul>
   
@@ -75,12 +75,12 @@
             <form method="POST" enctype="multipart/form-data">
                 <fieldset class="form-group">
                     {% csrf_token %}
-                    <legend class="border-bottom mb-4 bcg">Profile Info</legend>
+                    <legend class="border-bottom mb-4 bcg">プロフィール情報</legend>
                     {{ u_form|crispy }}
                     {{ p_form|crispy }}
                 </fieldset>
                 <div class="form-group" id="submit-btn-div">
-                    <button class="btn btn-outline-info" type="submit">Update</button>
+                    <button class="btn btn-outline-info" type="submit">更新</button>
                 </div>
             </form>
         </div>
